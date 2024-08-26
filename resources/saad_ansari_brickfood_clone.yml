@@ -1,0 +1,18 @@
+resources:
+  jobs:
+    saad_ansari_brickfood_clone:
+      name: Validation workflow
+      tasks:
+        - task_key: setup_task
+          run_if: ALL_SUCCESS
+          notebook_task:
+            notebook_path: ../src/notebook_brickfood.py
+            source: WORKSPACE
+          notification_settings: {}
+          email_notifications: {}
+          webhook_notifications: {}
+      webhook_notifications: {}
+      max_concurrent_runs: 1
+      queue:
+        enabled: true
+      email_notifications: {}
