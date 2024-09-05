@@ -1,7 +1,7 @@
 resources:
   jobs:
     saad_ansari_brickfood_clone:
-      name: Validation workflow
+      name: Validation workflow 1
       tasks:
         - task_key: setup_task
           run_if: ALL_SUCCESS
