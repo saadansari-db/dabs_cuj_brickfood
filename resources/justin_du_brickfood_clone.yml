@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    justin_du_brickfood_clone:
+      name: Validation workflow
+      tasks:
+        - task_key: setup_task
+          notebook_task:
+            notebook_path: /Workspace/Users/saad.ansari@databricks.com/brickfood_dab/notebook_brickfood
+            source: WORKSPACE
+      queue:
+        enabled: true
+
